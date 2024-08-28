@@ -51,3 +51,9 @@ npm run dev
 ```
 
 Esto abrirá la aplicación en tu navegador predeterminado, generalmente en http://localhost:3000.
+
+### Imagenes de ejemplo
+
+![alt text](image.png)
+
+![alt text](image-1.png)
