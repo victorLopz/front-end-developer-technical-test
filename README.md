@@ -1,36 +1,53 @@
-# React + TypeScript + Vite
+# README - Proyecto de Validación OTP en React
 
+## Descripción del Proyecto
 
-## Example
-![alt text](image.png)
+Este proyecto es una aplicación web desarrollada en **React** utilizando **TypeScript** y **Vite**. Su objetivo principal es implementar un sistema de validación de OTP (One-Time Password), que permite a los usuarios verificar su identidad a través de un código temporal enviado a su dispositivo. La aplicación está diseñada para ser rápida, eficiente y fácil de usar, aprovechando las capacidades de Vite para un desarrollo ágil.
 
-![alt text](image-1.png)
+## Tecnologías Utilizadas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **TypeScript**: Superset de JavaScript que añade tipado estático.
+- **Vite**: Herramienta de construcción que proporciona un entorno de desarrollo rápido y eficiente.
+- **ESLint**: Herramienta para identificar y reportar patrones en el código JavaScript.
 
-Currently, two official plugins are available:
+## Ejemplo de Interfaz
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Interfaz de la Aplicación
 
-## Expanding the ESLint configuration
+Pantalla de Validación OTP
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Requisitos Previos
 
-- Configure the top-level `parserOptions` property like this:
+Antes de comenzar, asegúrate de tener instalados los siguientes programas en tu máquina:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- [Node.js](https://nodejs.org/) (versión 14 o superior)
+- [npm](https://www.npmjs.com/) (incluido con Node.js)
+
+## Instalación y Configuración
+
+Sigue estos pasos para levantar la aplicación en tu entorno local:
+
+### 1. Clonar el Repositorio
+
+```bash
+git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+cd nombre-del-repositorio
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+###  2. Instalar Dependencias
+Ejecuta el siguiente comando para instalar todas las dependencias necesarias:
+bash
+```bash
+npm install
+```
+
+### 3. Levantar la Aplicación
+Para iniciar la aplicación en modo de desarrollo, utiliza el siguiente comando:
+bash
+
+```bash
+npm run dev
+```
+
+Esto abrirá la aplicación en tu navegador predeterminado, generalmente en http://localhost:3000.
