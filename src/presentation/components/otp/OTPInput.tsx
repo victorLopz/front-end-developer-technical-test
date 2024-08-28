@@ -70,13 +70,15 @@ const OTPVerification: React.FC<OTPVerificationProps> = ({
   return (
     <>
       <div className="flex flex-col items-center justify-center">
-        <h1 className="text-3xl text-center text-white mb-8">
+        <h1 className="text-3xl text-center text-white sm:max-w-[70%]">
           Digita el código para verificación de tu cuenta
         </h1>
 
         <div className="flex flex-col items-center justify-center rounded-xl w-[355px] h-[309px] bg-customOrange py-4 px-8">
-          <h2 className="text-white my-4 text-center">Aviso importante</h2>
-          <h3 className="text-white my-4 text-center">
+          <h2 className="text-white my-4 text-center text-2xl font-medium">
+            Aviso importante
+          </h2>
+          <h3 className="text-white my-4 text-center text-lg">
             Digita los 4 números que hemos enviado a tu correo electrónico
           </h3>
 
