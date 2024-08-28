@@ -55,6 +55,14 @@ npm run dev
 
 Esto abrirá la aplicación en tu navegador predeterminado, generalmente en http://localhost:3000.
 
+### Verificacion de OTP code
+
+Introduce el siguiente código para la verificación:
+
+```bash
+8765
+```
+
 ### Imagenes de ejemplo
 
 ![alt text](image.png)
