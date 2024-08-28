@@ -69,40 +69,38 @@ const OTPVerification: React.FC<OTPVerificationProps> = ({
 
   return (
     <>
-      <h1 className="text-3xl w-[355px] text-center text-white">
-        Digita el código para verificación de tu cuenta
-      </h1>
+      <div className="flex flex-col items-center justify-center min-h-screen">
+        <h1 className="text-3xl text-center text-white mb-8">
+          Digita el código para verificación de tu cuenta
+        </h1>
 
-      <div className="flex flex-col relative items-center justify-center rounded-xl w-[355px] h-[309px] bg-customOrange py-4 px-8 mt-4">
-        <h2 className="text-white text-[17px]">Aviso importante</h2>
-        <h3 className="text-white text-[14px] my-4 text-center">
-          Digita los 4 números que hemos enviado a tu correo electrónico
-        </h3>
+        <div className="flex flex-col items-center justify-center rounded-xl w-[355px] h-[309px] bg-customOrange py-4 px-8">
+          <h2 className="text-white text-[17px]">Aviso importante</h2>
+          <h3 className="text-white text-[14px] my-4 text-center">
+            Digita los 4 números que hemos enviado a tu correo electrónico
+          </h3>
 
-        <div className="flex justify-center space-x-2 mt-10">
-          {inputValues.map((value, index) => (
-            <input
-              key={index}
-              type="number"
-              maxLength={1}
-              className="w-8 h-8 border rounded text-center"
-              value={value}
-              onChange={(e) => handleInputChange(index, e.target.value)}
-              onKeyDown={(e) => handleKeyDown(index, e)}
-              onPaste={handlePaste}
-              inputMode="numeric"
-            />
-          ))}
-        </div>
+          <div className="flex justify-center space-x-2 mt-4">
+            {inputValues.map((value, index) => (
+              <input
+                key={index}
+                type="number"
+                maxLength={1}
+                className="w-10 h-10 border border-gray-300 rounded text-center"
+                value={value}
+                onChange={(e) => handleInputChange(index, e.target.value)}
+                onKeyDown={(e) => handleKeyDown(index, e)}
+                onPaste={handlePaste}
+                inputMode="numeric"
+              />
+            ))}
+          </div>
 
-        <button
-          className={`mt-8 py-2 px-4 rounded-xl w-[200px] text-white 
-            ${isValid ? "bg-green-500" : "bg-gray-500 cursor-not-allowed"} 
-            transition-colors duration-300`}
-          disabled={!isValid}
-        >
-          <span
-            className="text-[15px]"
+          <button
+            className={`mt-6 py-2 px-4 rounded-xl w-[200px] text-white ${
+              isValid ? "bg-green-500" : "bg-gray-500 cursor-not-allowed"
+            } transition-colors duration-300`}
+            disabled={!isValid}
             onClick={() => {
               Swal.fire({
                 icon: "success",
@@ -112,9 +110,9 @@ const OTPVerification: React.FC<OTPVerificationProps> = ({
               });
             }}
           >
-            Continuar
-          </span>
-        </button>
+            <span className="text-[15px]">Continuar</span>
+          </button>
+        </div>
       </div>
     </>
   );
