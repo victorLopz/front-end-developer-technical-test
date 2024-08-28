@@ -69,18 +69,18 @@ const OTPVerification: React.FC<OTPVerificationProps> = ({
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen">
+      <div className="flex flex-col items-center justify-center">
         <h1 className="text-3xl text-center text-white mb-8">
           Digita el código para verificación de tu cuenta
         </h1>
 
         <div className="flex flex-col items-center justify-center rounded-xl w-[355px] h-[309px] bg-customOrange py-4 px-8">
-          <h2 className="text-white text-[17px]">Aviso importante</h2>
-          <h3 className="text-white text-[14px] my-4 text-center">
+          <h2 className="text-white my-4 text-center">Aviso importante</h2>
+          <h3 className="text-white my-4 text-center">
             Digita los 4 números que hemos enviado a tu correo electrónico
           </h3>
 
-          <div className="flex justify-center space-x-2 mt-4">
+          <div className="flex justify-center space-x-2 mt-4 my-4">
             {inputValues.map((value, index) => (
               <input
                 key={index}
@@ -96,22 +96,24 @@ const OTPVerification: React.FC<OTPVerificationProps> = ({
             ))}
           </div>
 
-          <button
-            className={`mt-6 py-2 px-4 rounded-xl w-[200px] text-white ${
-              isValid ? "bg-green-500" : "bg-gray-500 cursor-not-allowed"
-            } transition-colors duration-300`}
-            disabled={!isValid}
-            onClick={() => {
-              Swal.fire({
-                icon: "success",
-                title: "¡Cuenta verificada!",
-                showConfirmButton: false,
-                timer: 1500
-              });
-            }}
-          >
-            <span className="text-[15px]">Continuar</span>
-          </button>
+          <div className="flex justify-center">
+            <button
+              className={`mt-2 py-2 px-4 rounded-xl w-[200px] text-white ${
+                isValid ? "bg-green-500" : "bg-gray-500 cursor-not-allowed"
+              } transition-colors duration-300`}
+              disabled={!isValid}
+              onClick={() => {
+                Swal.fire({
+                  icon: "success",
+                  title: "¡Cuenta verificada!",
+                  showConfirmButton: false,
+                  timer: 1500
+                });
+              }}
+            >
+              <span className="text-[15px]">Continuar</span>
+            </button>
+          </div>
         </div>
       </div>
     </>
