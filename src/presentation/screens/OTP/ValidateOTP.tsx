@@ -13,7 +13,6 @@ export const ValidateOTP = () => {
   const [timeToResendCode, setTimeToResendCode] = useState(0);
 
   const code = useAppSelector((state) => state.users.code);
-  console.log(code);
 
   useEffect(() => {
     if (isCreatedUser) {
