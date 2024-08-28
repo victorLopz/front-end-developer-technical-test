@@ -35,14 +35,17 @@ git clone https://github.com/tu-usuario/nombre-del-repositorio.git
 cd nombre-del-repositorio
 ```
 
-###  2. Instalar Dependencias
+### 2. Instalar Dependencias
+
 Ejecuta el siguiente comando para instalar todas las dependencias necesarias:
 bash
+
 ```bash
 npm install
 ```
 
 ### 3. Levantar la Aplicación
+
 Para iniciar la aplicación en modo de desarrollo, utiliza el siguiente comando:
 bash
 
